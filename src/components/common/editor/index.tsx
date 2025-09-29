@@ -1,15 +1,20 @@
+import React from "react";
 import { EditorContent, useEditor } from "@tiptap/react";
 import StarterKit from "@tiptap/starter-kit";
-import React from "react";
+
+import "./style.css";
+import styles from "./style.module.css";
 
 export const Editor: React.FC = () => {
 	const editor = useEditor({
-		extensions: [StarterKit],
+		extensions: [
+			StarterKit
+		],
 	});
 
 	return (
-		<div>
-			<EditorContent editor={editor} />
+		<div className={styles.container}>
+			<EditorContent editor={editor} className={styles.editor} />
 		</div>
 	);
 };

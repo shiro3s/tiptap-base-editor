@@ -1,0 +1,9 @@
+.ProseMirror {
+  flex: 1 1;
+  outline: none;
+  padding: 3rem 3rem 30svh;
+}
+
+.ProseMirror *:first-child {
+  margin: 0;
+}
